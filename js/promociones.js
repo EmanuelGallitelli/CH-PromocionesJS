@@ -10,7 +10,7 @@ function primerTitulo(){
     alert ("Hola, " + nombre + "! Selecciona tu destino.");
 
     var boton = document.getElementById("boton");
-    boton.addEventListener("click", cambiarTitulo);
+    boton.addEventListener("click", primerTitulo());
 
 };
 
