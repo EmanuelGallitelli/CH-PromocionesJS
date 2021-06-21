@@ -8,7 +8,6 @@ console.log(seccionPromos.innerText);
 function primerTitulo(){
     let nombre = prompt("Ingresa tu nombre");
     alert ("Hola, " + nombre + "! Selecciona tu destino.");
-
 };
 
 $(window).on("load", function(){
