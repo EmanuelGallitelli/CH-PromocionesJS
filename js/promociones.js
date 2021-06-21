@@ -43,3 +43,10 @@ for (const destino of destinos){
         console.log(carrito);
     });
 }
+
+$(document).ready(function(){
+    $(".centered-elements").click(function(){
+        $("#viajes").fadeToggle(1000);
+        console.log("Activar/Desactivar secuencia");
+    })
+});

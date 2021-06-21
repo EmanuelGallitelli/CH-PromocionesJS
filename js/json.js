@@ -23,4 +23,3 @@ function guardarPersona1(){
 
     localStorage.setItem("persona", JSON.stringify(persona));
 };
-
