@@ -9,9 +9,6 @@ function primerTitulo(){
     let nombre = prompt("Ingresa tu nombre");
     alert ("Hola, " + nombre + "! Selecciona tu destino.");
 
-    var boton = document.getElementById("boton");
-    boton.addEventListener("click", primerTitulo());
-
 };
 
 $(window).on("load", function(){
@@ -39,7 +36,7 @@ for (const destino of destinos){
     $("#viajes").append(`<div>
                         <h2> Destino: ${destino.nombre}</h2>
                         <b> $ ${destino.precio}</b>
-                        <button id="btn ${destino.id}">Comprar</button>   
+                        <button id="btn${destino.id}">Comprar</button>   
                         </div>`);
     $(`#btn${destino.id}`).on("click",function(){
         console.log(`Compraste ${destino.nombre}`);
