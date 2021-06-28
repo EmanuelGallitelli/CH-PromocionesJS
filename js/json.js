@@ -23,3 +23,24 @@ function guardarPersona1(){
 
     localStorage.setItem("persona", JSON.stringify(persona));
 };
+
+//Cotizacion Dolar Blue
+
+
+
+$(document).ready(function() {
+    obtenerDatos();
+});
+
+function obtenerDatos() {
+    $.get("https://api-dolar-argentina.herokuapp.com/api/dolarblue").done(function(resultado, estado) {
+        console.log("El estado que retorna GET a Tolkien es: " + estado);
+        console.log(resultado);
+        if (estado == "success") {
+            let datos = resultado.array;
+            datos.forEach(cotizacion => {
+                $("#cotizaciones").append("<tr><td>" + cotizacion.fecha + "</td><td>" + cotizacion.compra + "</td><td>" + cotizacion.venta + "</td></tr>");
+            });
+        }
+    });
+}
