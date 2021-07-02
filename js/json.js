@@ -24,7 +24,7 @@ function guardarPersona1(){
     localStorage.setItem("persona", JSON.stringify(persona));
 };
 
-//Cotizacion Dolar Blue
+//Cotizacion Dolar
 
 
 
@@ -33,14 +33,14 @@ $(document).ready(function() {
 });
 
 function obtenerDatos() {
-    $.get("https://www.dolarsi.com/aphttps://www.dolarsi.com/api/api.php?type=valoresprincipalesi/api.php?type=valoresprincipaleshttps://api-dolar-argentina.herokuapp.com/api/dolarblue").done(function(resultado, estado) {
+    $.get("https://www.dolarsi.com/api/api.php?type=valoresprincipales").done(function(resultado, estado) {
         console.log("El estado que retorna GET a Tolkien es: " + estado);
         console.log(resultado);
         if (estado == "success") {
-            let datos = resultado.casa;
+            let datos = resultado;
             datos.forEach(cotizacion => {
-                $("#cotizaciones").append("<tr><td>" + cotizacion.fecha + "</td><td>" + cotizacion.compra + "</td><td>" + cotizacion.venta + "</td></tr>");
+                $("#cotizaciones").append("<tr><td>" + cotizacion.casa.compra + "</td><td>" + cotizacion.casa.venta + "</td><td>" + cotizacion.casa.nombre + "</td></tr>");
             });
-        }
+        };
     });
 }
