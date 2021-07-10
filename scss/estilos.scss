@@ -38,6 +38,9 @@ header{
     font-size: 25px;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 413px){
+        font-size: 20px;
+    }
 }
 
 .titulo{
@@ -149,6 +152,10 @@ header{
             font-size: 30px;
             margin-top: 25px;
             background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
+            @media screen and (max-width: 413px){
+                margin: 12px;
+                font-size: 24px;
+            }
         }
         
 
@@ -189,14 +196,18 @@ header{
         padding: 70px;
         color: rgb(250, 153, 26);;
     }
-    @media screen and (max-width: 960px){
+    @media screen and (max-width: 413px){
+        margin: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         display: flex;
-        width: 500px;
-        font-size: 22px;
+        width: 350px;
+        font-size: 18px;
         
         th{
-            padding: 35px;
-            color: rgb(250, 153, 26);;
+            padding: 20px;
+            color: rgb(250, 153, 26);
+            font-size: 18px;
         }
     }
 }
@@ -206,6 +217,6 @@ footer p{
     padding: 100px;
     text-align: center;
     font-size: 34px;
-    background-color: black;
     color: white;
+    background-color: black;
 }

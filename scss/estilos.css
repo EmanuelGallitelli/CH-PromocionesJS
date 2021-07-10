@@ -47,6 +47,12 @@ header {
           align-items: center;
 }
 
+@media screen and (max-width: 413px) {
+  header {
+    font-size: 20px;
+  }
+}
+
 .titulo {
   margin: 25%;
   -webkit-box-pack: center;
@@ -194,6 +200,13 @@ header {
   background: linear-gradient(rgba(255, 255, 255, 0), black);
 }
 
+@media screen and (max-width: 413px) {
+  #viajes div h2 {
+    margin: 12px;
+    font-size: 24px;
+  }
+}
+
 #viajes div b {
   margin-left: 20px;
   font-size: 30px;
@@ -233,17 +246,21 @@ header {
   color: #fa991a;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 413px) {
   .dolar {
+    margin: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 500px;
-    font-size: 22px;
+    width: 350px;
+    font-size: 18px;
   }
   .dolar th {
-    padding: 35px;
+    padding: 20px;
     color: #fa991a;
+    font-size: 18px;
   }
 }
 
@@ -251,7 +268,7 @@ footer p {
   padding: 100px;
   text-align: center;
   font-size: 34px;
-  background-color: black;
   color: white;
+  background-color: black;
 }
 /*# sourceMappingURL=estilos.css.map */

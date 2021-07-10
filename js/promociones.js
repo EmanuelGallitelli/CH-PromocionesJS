@@ -50,3 +50,6 @@ $(document).ready(function(){
         console.log("Activar/Desactivar secuencia");
     })
 });
+
+const botonComprar = document.querySelector(".btn");
+console.log()
