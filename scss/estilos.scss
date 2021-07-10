@@ -38,7 +38,7 @@ header{
     font-size: 25px;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: 413px){
+    @media screen and (max-width: 640px){
         font-size: 20px;
     }
 }
@@ -196,7 +196,7 @@ header{
         padding: 70px;
         color: rgb(250, 153, 26);;
     }
-    @media screen and (max-width: 413px){
+    @media screen and (max-width: 640px){
         margin: 30px;
         margin-top: 50px;
         margin-bottom: 50px;

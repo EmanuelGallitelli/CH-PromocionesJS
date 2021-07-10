@@ -47,7 +47,7 @@ header {
           align-items: center;
 }
 
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 640px) {
   header {
     font-size: 20px;
   }
@@ -246,7 +246,7 @@ header {
   color: #fa991a;
 }
 
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 640px) {
   .dolar {
     margin: 30px;
     margin-top: 50px;
