@@ -27,6 +27,9 @@ body:before {
   background: linear-gradient(90deg, black, white);
   opacity: 0.4;
   z-index: -1;
+  @media screen and (max-width: 450px){
+      height: 100fr;
+  }
 }
 
 header {
@@ -204,7 +207,7 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
-    width: 400px;
+    width: 350px;
     font-size: 18px;
 
     th {
