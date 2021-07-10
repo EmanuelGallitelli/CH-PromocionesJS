@@ -1,221 +1,224 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
 }
 
-body{
-    margin: 0;
-    min-height: 100vh;
-    background-image: url(img/paris/paris.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(img/paris/paris.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-body:before{
-    content: "";
-    width: 100%;
-    height: 560%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(90deg,black,white);
-    opacity: 0.4;
-    z-index: -1;
+body:before {
+  content: "";
+  width: 100%;
+  height: 560%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, black, white);
+  opacity: 0.4;
+  z-index: -1;
 }
 
-header{
-    display: flex;
-    height: 100px;
-    width: 100%;
-    background-color: #555;
-    color: white;
-    font-size: 25px;
-    justify-content: center;
-    align-items: center;
-    @media screen and (max-width: 450px){
-        font-size: 20px;
-    }
+header {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: #555;
+  color: white;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 450px) {
+    font-size: 20px;
+  }
 }
 
-.titulo{
-    margin: 25%;
-    display: flex;
+.titulo {
+  margin: 25%;
+  display: flex;
 }
 
-.boton1{
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    width: 1000px;
-    height: 200px;
-    border-radius: 20px;
-    background-color: rgb(250, 153, 26);
-    color: white;
-    font-size: 50px;
+.boton1 {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  width: 1000px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: rgb(250, 153, 26);
+  color: white;
+  font-size: 50px;
+  @media screen and (max-width: 450px){
+      font-size: 30px;
+      width: 300px;
+      height: 100px;
+      padding: 25px;
+  }
 }
 
 .centered-elements {
-    justify-content: center;
-    padding: 10%;
-    display: flex;
-    align-items: center;
-    width: 100%;
+  justify-content: center;
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .btn {
-    position: relative;
-    display: block;
-    height: 100px;
-    width: 600px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    background-color: transparent;
-    color: white;
-    font-size: 30px;
-    overflow: hidden;
-    transition: all 500ms ease;
-    border: 4px solid rgb(250, 153, 26);
-    margin-bottom: 40px;
-    z-index: 0;
-    font-weight: 700;
-    cursor: pointer;
+  position: relative;
+  display: block;
+  height: 100px;
+  width: 600px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  overflow: hidden;
+  transition: all 500ms ease;
+  border: 4px solid rgb(250, 153, 26);
+  margin-bottom: 40px;
+  z-index: 0;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .btn::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: auto;
-    background-color: rgb(250, 153, 26);
-    transition: all 500ms ease;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  background-color: rgb(250, 153, 26);
+  transition: all 500ms ease;
+  z-index: -1;
 }
 
 .btn--1::before {
-    width: 0;
-    height: 100%;
+  width: 0;
+  height: 100%;
 }
 
 .btn--1:hover {
-    color: #434343;
+  color: #434343;
 }
 
 .btn--1:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 @keyframes shadow-pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(32, 226, 215, 0.6);
-    }
-    100% {
-        box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
-    }
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 226, 215, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
+  }
 }
-#promo{
-    display: flex;
-}
-
-#viajes{
-    position: relative;
-    margin-left: 15%;
-    margin-right: 15%;
-    display: grid;
-    color: white;
-    grid-auto-rows: 300px;
-    grid-gap: 10px;
-    
-
-    div{
-        padding: 1%;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: 3px solid rgb(250, 153, 26);
-        border-radius: 70px;
-
-        h2{
-            margin-left: 20px;
-            font-size: 30px;
-            margin-top: 25px;
-            background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
-            @media screen and (max-width: 450px){
-                margin: 12px;
-                font-size: 20px;
-            }
-        }
-        
-
-        b{
-            margin-left: 20px;
-            font-size: 30px;
-            background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
-            @media screen and (max-width: 450px){
-                margin: 12px;
-                font-size: 24px;
-            }
-        }
-
-        button{
-            margin-top: 120px;
-            padding: 10px;
-            font-size: 18px;
-            border-radius: 25px;
-        }
-    }
-
-    .imagenes{
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+#promo {
+  display: flex;
 }
 
-.dolar{
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 30px;
-    color: white;
-    font-size: 30px;
-    width: 800px;
-    background: linear-gradient(rgb(37, 102, 224),rgba(0,0,0,1));
-    border-radius: 60px;
+#viajes {
+  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: grid;
+  color: white;
+  grid-auto-rows: 300px;
+  grid-gap: 10px;
+
+  div {
+    padding: 1%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border: 3px solid rgb(250, 153, 26);
-    
-    th{
-        padding: 70px;
-        color: rgb(250, 153, 26);;
-    }
-    @media screen and (max-width: 450px){
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        display: flex;
-        width: 400px;
-        font-size: 18px;
-        
-        th{
-            padding: 20px;
-            color: rgb(250, 153, 26);
-            font-size: 20px;
-        }
-    }
-}
-    
+    border-radius: 70px;
 
-footer p{
-    padding: 100px;
-    text-align: center;
-    font-size: 34px;
-    color: white;
-    background-color: black;
+    h2 {
+      margin-left: 20px;
+      font-size: 30px;
+      margin-top: 25px;
+      background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+      @media screen and (max-width: 450px) {
+        margin: 12px;
+        font-size: 20px;
+      }
+    }
+
+    b {
+      margin-left: 20px;
+      font-size: 30px;
+      background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+      @media screen and (max-width: 450px) {
+        margin: 12px;
+        font-size: 24px;
+      }
+    }
+
+    button {
+      margin-top: 120px;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 25px;
+    }
+  }
+
+  .imagenes {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.dolar {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 30px;
+  color: white;
+  font-size: 30px;
+  width: 800px;
+  background: linear-gradient(rgb(37, 102, 224), rgba(0, 0, 0, 1));
+  border-radius: 60px;
+  border: 3px solid rgb(250, 153, 26);
+
+  th {
+    padding: 70px;
+    color: rgb(250, 153, 26);
+  }
+  @media screen and (max-width: 450px) {
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    width: 400px;
+    font-size: 18px;
+
+    th {
+      padding: 20px;
+      color: rgb(250, 153, 26);
+      font-size: 20px;
+    }
+  }
+}
+
+footer p {
+  padding: 100px;
+  text-align: center;
+  font-size: 34px;
+  color: white;
+  background-color: black;
 }

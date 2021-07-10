@@ -4,7 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 body {
@@ -74,6 +74,15 @@ header {
   background-color: #fa991a;
   color: white;
   font-size: 50px;
+}
+
+@media screen and (max-width: 450px) {
+  .boton1 {
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
+    padding: 25px;
+  }
 }
 
 .centered-elements {
